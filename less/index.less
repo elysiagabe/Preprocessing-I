@@ -103,7 +103,6 @@ p, a, li {
 	color: @white;
 	font-family: 'Crimson Text', sans-serif;
 	font-size: 2.2rem;
-	border-radius: 8px;
 	padding: 1% 3%;
 	margin: 4% 0;
 	transition: background-color .4s;
@@ -162,6 +161,19 @@ header {
 		} //End p
 	} //End div
 } //End skills
+
+.recent-work {
+	h2, p {
+		text-align: center;
+		margin: 3% 0;
+	}
+
+	div {
+		.flex();
+		justify-content: space-evenly;
+	}
+
+} //End recent work
 
 .experience {
 	background-color: @background-color;
