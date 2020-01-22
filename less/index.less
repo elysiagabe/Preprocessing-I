@@ -89,6 +89,7 @@ p, a, li {
 /* Variables - Colors */
 @highlight-color: #FC221C;
 @background-color: #F8DFDB;
+@hover-color: #FD908D;
 @white: #FFF;
 @black: #232020;
 
@@ -105,6 +106,11 @@ p, a, li {
 	border-radius: 8px;
 	padding: 1% 3%;
 	margin: 4% 0;
+	transition: background-color .4s;
+
+	&:hover {
+		background-color: @hover-color;
+	}
 }
 
 /* Header & Top Nav Styles */
