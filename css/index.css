@@ -189,11 +189,25 @@ header .top-nav {
   justify-content: space-between;
   padding: 2% 3% 1%;
 }
+@media (max-width: 500px) {
+  header .top-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+  }
+}
 header .top-nav .links {
   display: flex;
   width: 33%;
   justify-content: space-between;
   align-items: flex-end;
+}
+@media (max-width: 500px) {
+  header .top-nav .links {
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+  }
 }
 header .top-nav .links a {
   color: #1F1F1F;
@@ -205,15 +219,37 @@ header .top-nav .links a:hover {
   color: #B2B1B1;
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  header .top-nav .links a {
+    font-size: 2.4rem;
+    padding: 8%;
+  }
+}
 header .intro {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4% 0;
 }
+@media (max-width: 500px) {
+  header .intro {
+    flex-direction: column;
+  }
+}
 header .intro .intro-text {
   width: 45%;
   padding: 0 2%;
+}
+@media (max-width: 500px) {
+  header .intro .intro-text {
+    width: 95%;
+    padding: 4% 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header .intro .intro-text h1 {
+    font-size: 2.4rem;
+  }
 }
 header .intro .intro-text button {
   background-color: #FC221C;
@@ -234,8 +270,19 @@ header .intro .intro-text button:hover {
   justify-content: space-around;
   padding: 6% 0;
 }
+@media (max-width: 500px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .skills div {
   width: 25%;
+}
+@media (max-width: 500px) {
+  .skills div {
+    width: 95%;
+  }
 }
 .skills div p {
   padding: 2%;
@@ -256,6 +303,11 @@ header .intro .intro-text button:hover {
 .recent-work div {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .recent-work div {
+    flex-direction: column;
+  }
 }
 .recent-work div .photo-container {
   position: relative;
@@ -294,8 +346,25 @@ header .intro .intro-text button:hover {
   justify-content: space-around;
   padding: 6% 0;
 }
+@media (max-width: 500px) {
+  .experience {
+    flex-direction: column;
+    align-items: space-around;
+    padding: 6% 2%;
+  }
+  .experience h2 {
+    text-align: center;
+    padding-bottom: 4%;
+  }
+}
 .experience div {
   width: 65%;
+}
+@media (max-width: 500px) {
+  .experience div {
+    width: 95%;
+    padding: 2% 0;
+  }
 }
 .experience div .job-description {
   margin: 0 0 4%;
