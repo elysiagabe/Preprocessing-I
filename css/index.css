@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid pink;
+  border: none;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -187,7 +187,7 @@ header {
 header .top-nav {
   display: flex;
   justify-content: space-between;
-  padding: 2% 1%;
+  padding: 2% 3% 1%;
 }
 header .top-nav .links {
   display: flex;
@@ -245,9 +245,20 @@ header .intro .intro-text button:hover {
   text-align: center;
   margin: 3% 0;
 }
+.recent-work a {
+  color: #FC221C;
+  text-decoration: none;
+}
+.recent-work a:hover {
+  color: #FD908D;
+  text-decoration: underline;
+}
 .recent-work div {
   display: flex;
   justify-content: space-evenly;
+}
+.recent-work div img {
+  border: 1px solid #B2B1B1;
 }
 .experience {
   background-color: #FBEFED;

@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid pink;
+	border: none;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -94,6 +94,7 @@ p, a, li {
 @white: #FFF;
 @black: #1F1F1F;
 @gray: #B2B1B1;
+@border: 1px solid @gray;
 
 /* Mixins */
 .flex(){
@@ -122,7 +123,7 @@ header {
 	.top-nav {
 		.flex();
 		justify-content: space-between;
-		padding: 2% 1%;
+		padding: 2% 3% 1%;
 
 		.links {
 			.flex();
@@ -183,9 +184,23 @@ header {
 		margin: 3% 0;
 	} //End h2, p
 
+	a {
+		color: @highlight-color;
+		text-decoration: none;
+
+		&:hover {
+			color: @hover-color;
+			text-decoration: underline;
+		}
+	} //End a
+
 	div {
 		.flex();
 		justify-content: space-evenly;
+
+		img {
+			border: @border;
+		}
 	} //End div
 
 } //End recent work
