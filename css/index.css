@@ -168,17 +168,17 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 p,
 a,
 li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
-/* Variables - Colors */
+/* Variables */
 /* Mixins */
 /* Header & Top Nav Styles */
 header {
@@ -243,7 +243,7 @@ header .intro .intro-text button:hover {
 .recent-work h2,
 .recent-work p {
   text-align: center;
-  margin: 3% 0;
+  margin: 4% 0;
 }
 .recent-work a {
   color: #FC221C;
@@ -257,8 +257,36 @@ header .intro .intro-text button:hover {
   display: flex;
   justify-content: space-evenly;
 }
-.recent-work div img {
+.recent-work div .photo-container {
+  position: relative;
+}
+.recent-work div .photo-container .image {
+  display: block;
+  height: auto;
   border: 1px solid #B2B1B1;
+}
+.recent-work div .photo-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #1F1F1F;
+}
+.recent-work div .photo-container:hover .overlay {
+  opacity: 0.8;
+}
+.recent-work div .photo-container .text {
+  color: #FFF;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .experience {
   background-color: #FBEFED;
