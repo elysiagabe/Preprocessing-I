@@ -162,6 +162,7 @@ html {
 body {
   font-family: 'Crimson Text', serif;
   color: #232020;
+  line-height: 1.3;
 }
 h1 {
   font-size: 4rem;
@@ -257,4 +258,11 @@ header .intro .intro-text button:hover {
 }
 .experience div {
   width: 65%;
+}
+.experience div .job-description {
+  margin: 0 0 4%;
+}
+.experience div .job-description h3,
+.experience div .job-description p {
+  padding: 1% 0;
 }
