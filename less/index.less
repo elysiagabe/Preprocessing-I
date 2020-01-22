@@ -89,10 +89,11 @@ p, a, li {
 
 /* Variables - Colors */
 @highlight-color: #FC221C;
-@background-color: #F8DFDB;
+@background-color: #FBEFED;
 @hover-color: #FD908D;
 @white: #FFF;
-@black: #232020;
+@black: #1F1F1F;
+@gray: #B2B1B1;
 
 /* Mixins */
 .flex(){
@@ -196,3 +197,34 @@ header {
 		} //End job description
 	} //End div
 } //End experience
+
+.contact {
+	text-align: center;
+	padding: 4% 0 2%;
+
+	h2 {
+		font-size: 5.2rem;
+	}
+
+	button {
+		.large-button();
+	}
+} //End contact
+
+footer {
+	.flex();
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+
+	a {
+		color: @gray;
+		padding: 1%;
+		transition: color .4s;
+
+		&:hover {
+			color: @hover-color;
+		}
+	}
+
+} //End footer
