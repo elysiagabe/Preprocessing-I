@@ -187,13 +187,23 @@ header {
 header .top-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 2% 1%;
 }
 header .top-nav .links {
   display: flex;
   width: 33%;
   justify-content: space-between;
   align-items: flex-end;
+}
+header .top-nav .links a {
+  color: #1F1F1F;
+  text-decoration: none;
+  transition: color 0.4s;
+  padding: 1%;
+}
+header .top-nav .links a:hover {
+  color: #B2B1B1;
+  text-decoration: underline;
 }
 header .intro {
   display: flex;
@@ -285,6 +295,7 @@ footer {
 footer a {
   color: #B2B1B1;
   padding: 1%;
+  margin: 0 1%;
   transition: color 0.4s;
 }
 footer a:hover {
