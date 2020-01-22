@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid pink;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -134,6 +134,62 @@ html,
 body {
   height: 100%;
 }
+/* Base Styles */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlprgwHKFkZgtmSR3NB0oRJfajCOD-NS_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
+}
 html {
   font-size: 62.5%;
+}
+body {
+  padding: 2%;
+  font-family: 'Crimson Text', serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p,
+a,
+li {
+  font-size: 1.6rem;
+}
+/* Variables - Colors */
+/* Mixin Classes */
+.flex {
+  display: flex;
+}
+/* Top Nav Styles */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.top-nav .links {
+  display: flex;
+  width: 33%;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
