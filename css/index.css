@@ -307,6 +307,7 @@ header .intro .intro-text button:hover {
 @media (max-width: 500px) {
   .recent-work div {
     flex-direction: column;
+    align-items: center;
   }
 }
 .recent-work div .photo-container {
@@ -314,6 +315,7 @@ header .intro .intro-text button:hover {
 }
 .recent-work div .photo-container .image {
   display: block;
+  width: 320px;
   height: auto;
   border: 1px solid #B2B1B1;
 }
@@ -323,6 +325,7 @@ header .intro .intro-text button:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 320px;
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -339,6 +342,11 @@ header .intro .intro-text button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+@media (max-width: 500px) {
+  .recent-work div .photo-container {
+    margin: 2% 0;
+  }
 }
 .experience {
   background-color: #FBEFED;

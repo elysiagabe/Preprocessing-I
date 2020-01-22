@@ -246,6 +246,7 @@ header {
 
 		@media (max-width: 500px) {
 			.column();
+			align-items: center;
 		}
 
 		.photo-container {
@@ -253,6 +254,7 @@ header {
 
 			.image {
 				display: block;
+				width: 320px;
 				height: auto;
 				border: @border;
 			}
@@ -263,6 +265,7 @@ header {
 				bottom: 0;
 				left: 0;
 				right: 0;
+				width: 320px;
 				height: 100%;
 				opacity: 0;
 				transition: .5s ease;
@@ -282,6 +285,10 @@ header {
 				transform: translate(-50%, -50%);
 				text-align: center;
 			} //End overlay text
+
+			@media (max-width: 500px) {
+				margin: 2% 0;
+			}
 		} //End photo-container
 	} //End div
 
