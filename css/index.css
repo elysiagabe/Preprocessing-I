@@ -179,9 +179,6 @@ li {
 }
 /* Variables - Colors */
 /* Mixin Classes */
-.flex {
-  display: flex;
-}
 .large-button {
   background-color: #FC221C;
   color: #FFF;
@@ -224,4 +221,25 @@ header .intro .intro-text button {
   border-radius: 8px;
   padding: 1% 3%;
   margin: 4% 0;
+}
+.skills {
+  background-color: #F8DFDB;
+  display: flex;
+  justify-content: space-around;
+  padding: 6% 0;
+}
+.skills div {
+  width: 25%;
+}
+.skills div p {
+  padding: 2%;
+}
+.experience {
+  background-color: #F8DFDB;
+  display: flex;
+  justify-content: space-around;
+  padding: 6% 0;
+}
+.experience div {
+  width: 65%;
 }

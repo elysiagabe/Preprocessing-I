@@ -93,7 +93,7 @@ p, a, li {
 @black: #232020;
 
 /* Mixin Classes */
-.flex {
+.flex(){
 	display: flex;
 }
 
@@ -121,8 +121,8 @@ header {
 			width: 33%;
 			justify-content: space-between;
 			align-items: flex-end;
-		}
-	}
+		} //End links
+	} //End top nav
 
 	.intro {
 		.flex();
@@ -136,8 +136,34 @@ header {
 
 			button {
 				.large-button();
-			}
-		}
+			} //End intro button
+		} //End intro text
 
-	}
-}
+	} //End intro
+} //End header
+
+.skills {
+	background-color: @background-color;
+	.flex();
+	justify-content: space-around;
+	padding: 6% 0;
+
+	div {
+		width: 25%;
+
+		p {
+			padding: 2%;
+		} //End p
+	} //End div
+} //End skills
+
+.experience {
+	background-color: @background-color;
+	.flex();
+	justify-content: space-around;
+	padding: 6% 0;
+
+	div {
+		width: 65%;
+	} //End div
+} //End experience
